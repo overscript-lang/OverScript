@@ -26,24 +26,6 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="CodeExecution0.cs" />
-    <Compile Remove="CType.cs" />
-    <Compile Remove="ListVariables - Копировать.cs" />
-    <Compile Remove="ListVariables.cs" />
-    <Compile Remove="ListVariables0.cs" />
-    <Compile Remove="Operations0.cs" />
-    <Compile Remove="Operations2 - Копировать.cs" />
-    <Compile Remove="Variables — копия.cs" />
-  </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="f3.ico" />
-    <None Remove="f4.ico" />
-    <None Remove="f5.ico" />
-    <None Remove="OS-ico.ico" />
-    <None Remove="OverScript.7z" />
-    <None Remove="OverScript2.7z" />
-  </ItemGroup>
 
 </Project>

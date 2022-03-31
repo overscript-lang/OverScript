@@ -6,7 +6,7 @@ OverScript is a simple and powerful C-like statically-typed language written in 
 [OverScript]: https://overscript.org/
 
 Simple code example:
-```
+```cs
 Point[] arr = new Point[]{new Point(25, 77), new Point(122, 219)}; //creating an array of two instances
 int n; // 0 by default
 foreach(Point p in arr){ // iterating over all elements of an array
