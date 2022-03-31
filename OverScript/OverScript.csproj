@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Configurations>Debug;Release;ExceptionsON</Configurations>
+    <ApplicationIcon>OS.ico</ApplicationIcon>
+    <Copyright>Copyright © 2022 Dmitry Trojan</Copyright>
+    <Authors>Dmitry Trojan</Authors>
+    <Company />
+    <PackageProjectUrl>https://overscript.org/</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ExceptionsON|AnyCPU'">
+    <DefineConstants>TRACE;EXON</DefineConstants>
+    <Optimize>false</Optimize>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;EXON</DefineConstants>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CodeExecution0.cs" />
+    <Compile Remove="CType.cs" />
+    <Compile Remove="ListVariables - Копировать.cs" />
+    <Compile Remove="ListVariables.cs" />
+    <Compile Remove="ListVariables0.cs" />
+    <Compile Remove="Operations0.cs" />
+    <Compile Remove="Operations2 - Копировать.cs" />
+    <Compile Remove="Variables — копия.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="f3.ico" />
+    <None Remove="f4.ico" />
+    <None Remove="f5.ico" />
+    <None Remove="OS-ico.ico" />
+    <None Remove="OverScript.7z" />
+    <None Remove="OverScript2.7z" />
+  </ItemGroup>
+
+</Project>
