@@ -9,6 +9,9 @@
     <Authors>Dmitry Trojan</Authors>
     <Company />
     <PackageProjectUrl>https://overscript.org/</PackageProjectUrl>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ExceptionsON|AnyCPU'">
