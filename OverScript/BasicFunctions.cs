@@ -167,7 +167,7 @@ namespace OverScript
                 if ((castType.CType != null && valType.CType != null && castType.CType == valType.CType) || (!customCast && castType.ID == valType.ID && (castType.TypeHint == valType.TypeHint || (castType.TypeHint != null && valType.TypeHint != null && castType.TypeHint.IsAssignableFrom(valType.TypeHint)))))
                     throw new ScriptLoadingException($"Excess casting of type '{valType.Name}' to type '{castType.Name}'.");
 
-                if ((valType.ID != TypeID.Object || valType.TypeHint != null) && !ArgIsValid(castType, valType, out lvl))
+                if ((valType.ID != TypeID.Object || valType.TypeHint != null) && !ArgIsValid(castType, valType, out lvl) && (castType.ID != TypeID.Char || !TypeIsNumeric(valType.ID)))
                 {
                     bool err = true;
                     if (valType.TypeHint != null)
