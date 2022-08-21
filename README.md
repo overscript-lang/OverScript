@@ -1,9 +1,10 @@
 # The OverScript Programming Language
 
-This is the main source code repository for [OverScript]. 
+This is the source code repository for [OverScript]. This version is for .NET 6. Version for .NET Standard 2.1 [here].
 OverScript is a simple and powerful C-like statically-typed language written in C# and is great for both embedding in .NET programs and building standalone applications. The project was developed from scratch without looking back at traditional approaches to creating languages. The unique approach allows the language to go beyond the standard features and have great potential for improvement.
 
 [OverScript]: https://overscript.org/
+[here]: https://github.com/overscript-lang/OverScriptStandard
 
 Simple code example:
 ```cs
